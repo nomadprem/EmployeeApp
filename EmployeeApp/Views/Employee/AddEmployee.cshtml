@@ -1,0 +1,27 @@
+﻿@model EmployeeApp.Models.Employee
+
+<h2>📝 Add New Employee</h2>
+
+<div class="employee-card">
+    <form asp-action="AddEmployee" method="post">
+        <div class="form-group">
+            <label>First Name:</label>
+            <input asp-for="FirstName" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label>Last Name:</label>
+            <input asp-for="LastName" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label>Job Title:</label>
+            <input asp-for="JobTitle" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label>Salary:</label>
+            <input asp-for="Salary" class="form-control" type="number" required />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-success">✅ Add Employee</button>
+        <a asp-action="Index" class="btn btn-secondary">🔙 Cancel</a>
+    </form>
+</div>

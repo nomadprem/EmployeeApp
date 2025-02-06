@@ -1,0 +1,18 @@
+﻿@model EmployeeApp.Models.Employee
+
+<h2>Employee Details</h2>
+
+<div class="employee-card">
+
+    <p><strong>Employee ID:</strong> @Model.EmployeeID</p>
+    <p><strong>Name:</strong> @Model.FirstName @Model.LastName</p>
+    <p><strong>Job Title:</strong> @Model.JobTitle</p>
+    <p><strong>Salary:</strong> $@Model.Salary</p>
+
+    <div>
+        <a asp-action="Previous" class="btn btn-primary">Previous</a>
+        <a asp-action="Next" class="btn btn-primary">Next</a>
+        <a asp-action="AddEmployee" class="btn btn-success">Add New Employee</a>
+    </div>
+
+</div>
